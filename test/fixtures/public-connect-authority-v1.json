@@ -1,0 +1,5 @@
+{
+  "authority_version": 1,
+  "endpoint_suffixes": [".tianacloud.com", ".tianacloud-staging.net"],
+  "default_port": 443
+}

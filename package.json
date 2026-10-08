@@ -1,0 +1,24 @@
+{
+  "name": "@tiana/node",
+  "version": "0.1.0-dev.0",
+  "description": "Native Tiana v1 CONNECT streams for Node.js",
+  "type": "module",
+  "private": true,
+  "sideEffects": false,
+  "license": "Apache-2.0",
+  "engines": { "node": ">=22" },
+  "files": ["src", "examples", "README.md", "LICENSE"],
+  "exports": {
+    ".": { "types": "./src/index.d.ts", "import": "./src/index.js" }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "test:types": "tsc -p test/types/tsconfig.json",
+    "test:package": "node scripts/package-smoke.mjs",
+    "test:gateway": "node scripts/gateway-smoke.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.13",
+    "typescript": "5.9.3"
+  }
+}
